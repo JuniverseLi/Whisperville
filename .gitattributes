@@ -1,0 +1,5 @@
+* text=auto eol=lf
+
+# Preserve the exact bytes used by published audit hashes.
+docs/results/** -text
+docs/examples/*.json -text

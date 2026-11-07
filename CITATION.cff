@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: 'If you use this software or its recorded experiments, cite the software version or commit and the protocol version.'
+title: 'Whisperville: A Traceable Communication Sandbox'
+type: software
+authors:
+  - name: 'Whisperville contributors'
+abstract: 'An experimental pixel-town sandbox for inspecting committed message cascades, source provenance and belief updates, with reproducible rule baselines and an audited private-information API pilot.'
+license: MIT
+keywords:
+  - communication
+  - information diffusion
+  - multi-agent simulation
+  - provenance
+  - reproducibility

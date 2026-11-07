@@ -1,0 +1,1169 @@
+:root {
+  --ink: #62432e;
+  --paper: #fff0ca;
+  --paper-light: #fff6dc;
+  --wood: #875335;
+  --wood-dark: #5b3c2b;
+  --wood-light: #d49b61;
+  color: var(--ink);
+  background: #72a853;
+}
+body {
+  min-width: 320px;
+  overflow: hidden;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible {
+  outline: 3px solid #3d7895;
+  outline-offset: 4px;
+}
+.pixel-game {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  min-height: 440px;
+  overflow: hidden;
+  font-family: 'DM Sans', 'Microsoft YaHei', sans-serif;
+}
+.pixel-world {
+  width: 100%;
+  height: 100%;
+  display: block;
+  image-rendering: pixelated;
+  touch-action: none;
+  cursor: crosshair;
+}
+.game-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 120px #284d382b;
+  border: 5px solid #4b624139;
+}
+.paper-panel {
+  background: var(--paper);
+  border: 3px solid var(--wood);
+  outline: 2px solid #e5ba7c;
+  box-shadow:
+    inset 0 0 0 2px #f8db9a,
+    0 5px 0 #4c392751,
+    0 9px 20px #354d3626;
+}
+.wood-panel {
+  color: #fff0c9;
+  background-color: #915a30;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 7px, #3c251b18 7px 8px, transparent 8px 16px),
+    repeating-linear-gradient(90deg, transparent 0 31px, #e8b56a12 31px 32px);
+  border: 3px solid #5e402c;
+  box-shadow:
+    inset 0 0 0 2px #c48b51,
+    0 4px 0 #49372248;
+}
+.pixel-header {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.town-sign {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #fff0cd;
+  text-shadow: 0 2px #533923;
+  background: repeating-linear-gradient(0deg, #8b5938 0 10px, #80502e 10px 11px, #8b5938 11px 19px);
+  padding: 8px 21px 10px 14px;
+  border: 3px solid #573d2a;
+  box-shadow:
+    inset 0 0 0 2px #c08d57,
+    0 4px 0 #49372242;
+  transform: rotate(-1.5deg);
+}
+.sign-flower {
+  color: #f8db87;
+  font-size: 36px;
+  line-height: 1;
+}
+.town-sign strong {
+  display: block;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+.town-sign small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  margin-top: 2px;
+}
+.day-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 20px;
+}
+.day-card > svg {
+  color: #f6d574;
+}
+.day-card strong {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.day-card span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #efd4a6;
+}
+.day-card i {
+  width: 3px;
+  height: 3px;
+  background: #edcb95;
+}
+.quest-card {
+  position: absolute;
+  left: 26px;
+  top: 116px;
+  width: 254px;
+  padding: 17px 18px 15px;
+}
+.quest-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #a07543;
+}
+.quest-caption small {
+  font-size: 10px;
+  border-bottom: 1px solid #d5b57d;
+}
+.quest-card h1 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin: 13px 0 8px;
+}
+.quest-card p {
+  font-size: 12px;
+  margin: 0 0 17px;
+  line-height: 1.8;
+}
+.pixel-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 2px solid #775033;
+  background: #f6d795;
+  box-shadow:
+    inset 0 2px #fff0c5,
+    0 3px 0 #a77a46;
+  color: #65442d;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 0;
+  font-size: 12px;
+}
+.pixel-button:hover:not(:disabled) {
+  background: #ffe6a7;
+  transform: translateY(-1px);
+}
+.pixel-button:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px #fff0c5;
+}
+.quest-go {
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px 11px;
+  background: #dfb675;
+}
+.game-tools {
+  position: absolute;
+  top: 111px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  padding: 7px 8px;
+  gap: 2px;
+}
+.game-tools button {
+  background: transparent;
+  border: 0;
+  color: #ffe8b9;
+  width: 46px;
+  padding: 6px 3px;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+}
+.game-tools button svg {
+  width: 19px;
+  height: 19px;
+  stroke-width: 1.6;
+}
+.game-tools button span {
+  font-size: 10px;
+}
+.game-tools button:hover,
+.game-tools button.active {
+  background: #c2925b;
+  color: #fff9e7;
+}
+.tool-divider {
+  height: 26px;
+  width: 1px;
+  background: #c18e56;
+  margin: 0 5px;
+}
+.map-zoom {
+  position: absolute;
+  right: 24px;
+  bottom: 130px;
+  display: grid;
+  padding: 3px;
+}
+.map-zoom button {
+  border: 0;
+  color: #ffebbd;
+  background: transparent;
+  padding: 8px;
+  display: flex;
+}
+.map-zoom button:hover {
+  background: #b57e4b;
+}
+.map-zoom button:last-child {
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  border-top: 1px solid #c4965a;
+}
+.map-zoom button small {
+  font-size: 8px;
+}
+.map-zoom button.active {
+  background: #c29357;
+}
+.paper-panel {
+  box-shadow:
+    inset 0 0 0 2px #f8db9a,
+    inset 0 0 0 4px #b7824026,
+    0 5px 0 #4c392751,
+    0 9px 20px #354d3626;
+}
+.quest-card {
+  background: #ffebbb;
+}
+.quest-card::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 3px;
+  height: 3px;
+  background: #ad7c42;
+  box-shadow:
+    -4px 0 #d7ad6c,
+    0 4px #d7ad6c;
+}
+.sign-flower {
+  position: relative;
+  font-size: 0;
+  width: 29px;
+  height: 29px;
+}
+.sign-flower::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 9px;
+  height: 9px;
+  background: #9b662e;
+  box-shadow:
+    0 -8px #f5d17d,
+    0 8px #f5d17d,
+    -8px 0 #f5d17d,
+    8px 0 #f5d17d,
+    -5px -5px #ffe5a2,
+    5px -5px #ffe5a2,
+    -5px 5px #e8b965,
+    5px 5px #e8b965;
+}
+.map-caption {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 24px;
+}
+.map-caption span {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #9a7547;
+}
+.game-footer {
+  position: absolute;
+  bottom: 22px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  pointer-events: none;
+}
+.game-footer > * {
+  pointer-events: auto;
+}
+.inventory {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px 5px 5px;
+  gap: 6px;
+}
+.bag-player {
+  display: flex;
+  width: 54px;
+  height: 59px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #d3a065;
+  background: #6f5137;
+  align-items: end;
+}
+.pixel-portrait {
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-size: 300% 400%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+.bag-player .pixel-portrait {
+  width: 54px;
+  height: 54px;
+}
+.inventory-slot {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 5px;
+  width: 57px;
+  height: 59px;
+  color: #e1bf8b;
+  border: 2px solid #66462f;
+  box-shadow: inset 0 0 0 1px #c59357;
+  background: #765437;
+}
+.inventory-slot small {
+  font-size: 8px;
+}
+.inventory-slot.has-item {
+  background: #caa16a;
+  color: #65442e;
+}
+.inventory-slot b {
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  font-size: 10px;
+}
+.bag-label {
+  padding: 0 9px 0 8px;
+}
+.bag-label strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+}
+.bag-label span {
+  display: block;
+  font-size: 10px;
+  margin-top: 8px;
+  color: #e9ca96;
+}
+.walk-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  align-self: center;
+  font-size: 11px;
+  color: #fff8dd;
+  text-shadow: 0 1px 3px #334c36;
+  background: #3e583a85;
+  padding: 10px 18px;
+  border: 1px solid #e8edb74a;
+}
+kbd {
+  font: inherit;
+  font-size: 10px;
+  border: 1px solid currentColor;
+  padding: 2px 4px;
+  opacity: 0.85;
+}
+.talk-button {
+  height: 51px;
+  min-width: 184px;
+  background: #fae2ab;
+}
+.talk-button.can-talk {
+  background: #f5cd7d;
+}
+.talk-button kbd {
+  margin-left: 6px;
+}
+.pixel-hint {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  padding: 11px 20px;
+  background: #4d4b35ed;
+  border: 2px solid #cfbc7d;
+  color: #fff2ca;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+  z-index: 26;
+}
+.pixel-save-warning {
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+  font-size: 10px;
+  background: #754f35;
+  color: #fff0c8;
+  padding: 2px 8px;
+}
+.welcome-shade {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #314c3a7a;
+  backdrop-filter: blur(2px);
+  z-index: 20;
+}
+.welcome-card {
+  position: relative;
+  width: min(470px, calc(100% - 36px));
+  padding: 26px 35px 28px;
+  text-align: center;
+}
+.welcome-card::before,
+.welcome-card::after {
+  content: '✦';
+  position: absolute;
+  color: #b8894f;
+  font-size: 16px;
+  top: 12px;
+}
+.welcome-card::before {
+  left: 14px;
+}
+.welcome-card::after {
+  right: 14px;
+}
+.welcome-art {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 15px;
+}
+.welcome-art .pixel-portrait {
+  width: 86px;
+  height: 86px;
+}
+.welcome-art .pixel-portrait:nth-child(2) {
+  width: 102px;
+  height: 102px;
+  margin: 0 6px;
+}
+.pixel-eyebrow {
+  font-size: 9px;
+  letter-spacing: 2.2px;
+  color: #a27c49;
+}
+.welcome-card h1 {
+  font:
+    600 28px 'Microsoft YaHei',
+    sans-serif;
+  letter-spacing: 3px;
+  margin: 19px 0 16px;
+}
+.welcome-card p {
+  font-size: 13px;
+  color: #8d6c47;
+  line-height: 2.2;
+  margin: 0;
+}
+.welcome-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border-top: 1px solid #ddbf87;
+  padding-top: 19px;
+  margin: 23px 0;
+  font-size: 11px;
+}
+.welcome-controls kbd {
+  display: block;
+  margin-bottom: 9px;
+  padding: 4px 8px;
+  background: #fae6b7;
+  color: #916b3e;
+}
+.start-button {
+  width: 100%;
+  padding: 13px;
+  background: #c49056;
+  color: #fff6d9;
+  border-color: #765134;
+  box-shadow:
+    inset 0 2px #e0b478,
+    0 3px 0 #765134;
+  font-size: 14px;
+}
+.start-button:hover:not(:disabled) {
+  background: #d3a264;
+}
+.welcome-card > small {
+  display: block;
+  font-size: 10px;
+  color: #a17f50;
+  margin-top: 18px;
+}
+.npc-dialogue {
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(850px, calc(100% - 56px));
+  z-index: 15;
+  display: flex;
+  padding: 21px 24px 24px;
+  gap: 25px;
+}
+.dialogue-person {
+  width: 112px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.portrait-frame {
+  border: 2px solid #a97b4c;
+  background: #ddc69a;
+  box-shadow: inset 0 0 0 2px #f8e3b4;
+  display: grid;
+  place-items: center;
+  height: 112px;
+}
+.portrait-frame .pixel-portrait {
+  width: 112px;
+  height: 112px;
+}
+.dialogue-person > strong {
+  display: block;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.dialogue-person > small {
+  display: block;
+  margin-top: 5px;
+  color: #a27d50;
+  font-size: 10px;
+}
+.dialogue-content {
+  flex: 1;
+  min-width: 0;
+}
+.dialogue-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b39161;
+  font-size: 10px;
+  border-bottom: 1px solid #dfc28f;
+  padding-bottom: 9px;
+}
+.dialogue-top button {
+  border: 0;
+  background: transparent;
+  color: #9d774a;
+  padding: 2px;
+  display: flex;
+}
+.spoken-line {
+  color: #694a31;
+  min-height: 66px;
+  font-size: 14px;
+  line-height: 2;
+  margin: 17px 0 19px;
+  letter-spacing: 0.5px;
+  animation: appear-text 0.2s ease-out;
+}
+.dialogue-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.dialogue-choices button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #d1ad70;
+  background: #f7e3b4;
+  color: #805a35;
+  padding: 8px 11px;
+  font-size: 11px;
+}
+.dialogue-choices button:hover {
+  background: #efd093;
+  border-color: #9c703f;
+}
+.dialogue-choices button.share-choice {
+  background: #dce1b2;
+  border-color: #a8b076;
+  color: #66703c;
+}
+.touch-pad {
+  display: none;
+}
+.is-overview .quest-card,
+.is-overview .walk-hint {
+  display: none;
+}
+.is-overview .game-tools {
+  top: 112px;
+  flex-direction: column;
+}
+.is-overview .game-tools .tool-divider {
+  width: 26px;
+  height: 1px;
+  margin: 5px 0;
+}
+.pixel-game:has(.npc-dialogue) .game-footer,
+.pixel-game:has(.npc-dialogue) .touch-pad {
+  visibility: hidden;
+}
+.dialog {
+  color: var(--ink);
+  background: var(--paper);
+  border: 4px solid #95653e;
+  outline: 2px solid #e2b876;
+  border-radius: 0;
+  box-shadow:
+    inset 0 0 0 2px #f8da9a,
+    0 15px 70px #24362b66;
+  max-height: 88dvh;
+}
+.dialog::backdrop {
+  background: #2d443787;
+  backdrop-filter: blur(2px);
+}
+.dialog-inner {
+  padding: 30px;
+}
+.dialog .eyebrow {
+  color: #ac8b58;
+  letter-spacing: 2px;
+  font-size: 9px;
+}
+.dialog-heading {
+  margin-bottom: 20px;
+}
+.dialog-heading h2 {
+  font:
+    600 23px 'Microsoft YaHei',
+    sans-serif;
+  color: #735033;
+  margin-top: 10px;
+}
+.dialog .icon-button {
+  color: #976c40;
+  border-color: #dec08a;
+  background: #fae7b7;
+  border-radius: 0;
+}
+.dialog p {
+  line-height: 1.9;
+}
+.dialog .muted {
+  color: #9c7d54;
+}
+.dialog .primary-button {
+  background: #a77745;
+  border-color: #7e5733;
+  border-radius: 0;
+}
+.dialog .secondary-button {
+  border-color: #c6a16b;
+  color: #906738;
+  border-radius: 0;
+  background: #f8e2ae;
+}
+.dialog .info-box {
+  background: #f5e1b1;
+  border-color: #d9bb81;
+  color: #917047;
+  border-radius: 0;
+}
+.official-notice {
+  background: #fff5d9;
+  border-color: #d9bc83;
+  border-radius: 0;
+}
+.panel-intro {
+  color: #9f7b4d;
+  font-size: 12px;
+  margin: 0 0 24px;
+}
+.pixel-residents-dialog {
+  width: min(850px, calc(100vw - 36px));
+}
+.pixel-residents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.pixel-residents article {
+  position: relative;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  padding: 15px 13px;
+  border: 1px solid #dfbf85;
+  background: #f9e8bf;
+}
+.resident-art {
+  align-self: stretch;
+  width: 74px;
+  background: #e8d6a8;
+  display: grid;
+  place-items: center;
+  border-bottom: 3px solid #d3b47d;
+}
+.resident-art .pixel-portrait {
+  width: 84px;
+  height: 84px;
+}
+.pixel-residents article > div:nth-child(2) {
+  flex: 1;
+}
+.pixel-residents h3 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.pixel-residents h3 small {
+  font-weight: 400;
+  font-size: 10px;
+  display: block;
+  letter-spacing: 0;
+  color: #aa8655;
+  margin-top: 5px;
+}
+.pixel-residents p {
+  font-size: 10px;
+  color: #9d7b4c;
+  margin: 9px 0;
+}
+.pixel-residents .pixel-button {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+.met-check {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #8a985c;
+}
+.journal-quest {
+  background: #f6e3b5;
+  border: 1px solid #d9b77b;
+  padding: 18px;
+}
+.journal-quest > span {
+  font-size: 10px;
+  color: #a37c47;
+}
+.journal-quest h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.journal-quest p {
+  font-size: 12px;
+  color: #9a7748;
+}
+.journal-heading {
+  margin-top: 25px;
+  font-size: 14px;
+}
+.journal-entries {
+  padding: 0 0 0 20px;
+  font-size: 12px;
+  line-height: 2;
+  color: #98734a;
+}
+.journal-entries li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #d8b982;
+}
+.journal-status {
+  border-top: 1px solid #d9ba84;
+  margin-top: 24px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+}
+.journal-status small {
+  color: #aa8859;
+}
+.journal-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.journal-actions button {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #a68151;
+  border: 0;
+  background: transparent;
+  font-size: 10px;
+  padding: 5px 0;
+}
+.toast {
+  background: #fff0ca;
+  color: #7e5735;
+  border-color: #b58a53;
+  border-radius: 0;
+  z-index: 50;
+}
+.toast button {
+  color: #9e794b;
+}
+@keyframes appear-text {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 1000px) {
+  .walk-hint {
+    display: none;
+  }
+  .quest-card {
+    width: 225px;
+    padding: 14px;
+  }
+  .map-caption {
+    top: auto;
+    bottom: 115px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .pixel-header {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    gap: 8px;
+  }
+  .town-sign {
+    padding: 7px 10px;
+    gap: 6px;
+  }
+  .town-sign strong {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .town-sign small {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .sign-flower {
+    font-size: 26px;
+  }
+  .day-card {
+    padding: 9px 12px;
+    gap: 8px;
+  }
+  .day-card strong {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .day-card span {
+    font-size: 9px;
+    gap: 6px;
+  }
+  .day-card > svg {
+    width: 19px;
+  }
+  .quest-card {
+    top: 91px;
+    left: 13px;
+    width: 194px;
+    padding: 11px 12px;
+  }
+  .quest-card h1 {
+    font-size: 14px;
+    margin: 9px 0 7px;
+  }
+  .quest-card p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .quest-caption {
+    font-size: 9px;
+  }
+  .quest-caption small {
+    font-size: 8px;
+  }
+  .quest-go {
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+  .game-tools {
+    top: 91px;
+    right: 12px;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .game-tools button {
+    width: 35px;
+    padding: 7px 0;
+    gap: 3px;
+  }
+  .game-tools button svg {
+    width: 17px;
+    height: 17px;
+  }
+  .game-tools button span {
+    font-size: 8px;
+  }
+  .tool-divider {
+    width: 20px;
+    height: 1px;
+    margin: 5px;
+  }
+  .game-footer {
+    bottom: 13px;
+    left: 13px;
+    right: 13px;
+    gap: 8px;
+  }
+  .inventory {
+    padding: 4px;
+    gap: 4px;
+  }
+  .bag-label {
+    display: none;
+  }
+  .bag-player {
+    width: 45px;
+    height: 49px;
+  }
+  .bag-player .pixel-portrait {
+    width: 45px;
+    height: 45px;
+  }
+  .inventory-slot {
+    width: 47px;
+    height: 49px;
+  }
+  .inventory-slot > svg {
+    width: 21px;
+  }
+  .talk-button {
+    min-width: 154px;
+    height: 49px;
+    padding: 8px 10px;
+    font-size: 10px;
+    gap: 7px;
+  }
+  .talk-button svg {
+    width: 16px;
+  }
+  .talk-button kbd {
+    font-size: 9px;
+    margin-left: 0;
+  }
+  .map-zoom {
+    right: 13px;
+    bottom: 100px;
+  }
+  .touch-pad {
+    position: absolute;
+    bottom: 105px;
+    left: 17px;
+    display: grid;
+    grid-template: repeat(2, 39px) / repeat(3, 39px);
+    gap: 3px;
+    opacity: 0.8;
+  }
+  .touch-pad button {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 2px solid #624b32;
+    background: #f6e1b3d9;
+    color: #80613a;
+    touch-action: none;
+    user-select: none;
+  }
+  .touch-w {
+    grid-area: 1 / 2;
+  }
+  .touch-a {
+    grid-area: 2 / 1;
+  }
+  .touch-s {
+    grid-area: 2 / 2;
+  }
+  .touch-d {
+    grid-area: 2 / 3;
+  }
+  .npc-dialogue {
+    bottom: 14px;
+    padding: 14px;
+    width: calc(100% - 28px);
+    gap: 12px;
+  }
+  .dialogue-person {
+    width: 66px;
+  }
+  .portrait-frame {
+    height: 74px;
+  }
+  .portrait-frame .pixel-portrait {
+    width: 72px;
+    height: 72px;
+  }
+  .dialogue-person > strong {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .dialogue-person > small {
+    font-size: 8px;
+  }
+  .dialogue-top {
+    font-size: 9px;
+  }
+  .spoken-line {
+    font-size: 12px;
+    line-height: 1.9;
+    margin: 12px 0;
+    min-height: 95px;
+  }
+  .dialogue-choices {
+    gap: 6px;
+  }
+  .dialogue-choices button {
+    font-size: 10px;
+    padding: 7px 8px;
+  }
+  .welcome-card {
+    padding: 22px 25px;
+  }
+  .welcome-card h1 {
+    font-size: 23px;
+  }
+  .welcome-controls {
+    gap: 13px;
+  }
+  .welcome-art {
+    margin-bottom: 12px;
+  }
+  .welcome-art .pixel-portrait {
+    width: 68px;
+    height: 68px;
+  }
+  .welcome-art .pixel-portrait:nth-child(2) {
+    width: 86px;
+    height: 86px;
+  }
+  .dialog-inner {
+    padding: 22px 18px;
+  }
+  .dialog-heading h2 {
+    font-size: 19px;
+  }
+  .pixel-residents {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .pixel-residents article {
+    gap: 16px;
+    padding: 10px;
+  }
+  .pixel-residents p {
+    font-size: 11px;
+  }
+  .journal-status {
+    flex-direction: column;
+  }
+}
+@media (max-height: 650px) and (min-width: 601px) {
+  .pixel-header {
+    top: 10px;
+  }
+  .town-sign {
+    padding: 5px 12px;
+  }
+  .day-card {
+    padding: 8px 14px;
+  }
+  .quest-card {
+    top: 88px;
+  }
+  .game-tools {
+    top: 88px;
+  }
+  .welcome-card {
+    padding: 14px 30px;
+  }
+  .welcome-art {
+    display: none;
+  }
+  .welcome-card h1 {
+    margin: 14px 0;
+  }
+  .npc-dialogue {
+    bottom: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

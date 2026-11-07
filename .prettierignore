@@ -1,0 +1,11 @@
+node_modules
+dist
+work
+output
+package-lock.json
+
+.whisperville
+
+# Immutable generated audit artifacts; hashes use exported bytes.
+docs/results/*.json
+docs/examples/*.json

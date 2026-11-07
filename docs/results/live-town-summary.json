@@ -1,0 +1,105 @@
+{
+  "version": "live-town-run-v1",
+  "model": "gemini-3.8-flash",
+  "scenarioId": "school-closure",
+  "seed": 42,
+  "status": "completed-bounded-run",
+  "population": 25,
+  "modelParticipants": [
+    "lin",
+    "mia"
+  ],
+  "segments": 3,
+  "calls": 9,
+  "successfulCalls": 9,
+  "failedCalls": 0,
+  "requestLimit": 12,
+  "maxOutputTokensPerCall": 2048,
+  "ruleFallbackCalls": 0,
+  "automaticRetries": 0,
+  "startedAt": "2026-11-07T08:35:01.339Z",
+  "finishedAt": "2026-11-07T08:35:59.716Z",
+  "wallSeconds": 58.377,
+  "modelRequestSeconds": 54.534,
+  "usage": {
+    "prompt_tokens": 19278,
+    "completion_tokens": 10121,
+    "total_tokens": 29399
+  },
+  "unknownUsageCalls": 0,
+  "dialogueTurns": 8,
+  "sessions": 2,
+  "scenarioTransmissions": 2,
+  "ordinaryResponses": 6,
+  "scheduleChanges": 0,
+  "reflections": 0,
+  "metrics": [
+    {
+      "round": 0,
+      "reached": 2,
+      "reliable": 1,
+      "rumor": 1,
+      "unaware": 23,
+      "retellings": 0,
+      "categoryChanges": 0,
+      "corrected": 0,
+      "maxDepth": 0
+    },
+    {
+      "round": 1,
+      "reached": 2,
+      "reliable": 1,
+      "rumor": 1,
+      "unaware": 23,
+      "retellings": 0,
+      "categoryChanges": 0,
+      "corrected": 0,
+      "maxDepth": 0
+    },
+    {
+      "round": 2,
+      "reached": 3,
+      "reliable": 1,
+      "rumor": 2,
+      "unaware": 22,
+      "retellings": 1,
+      "categoryChanges": 0,
+      "corrected": 0,
+      "maxDepth": 1
+    },
+    {
+      "round": 3,
+      "reached": 3,
+      "reliable": 1,
+      "rumor": 2,
+      "unaware": 22,
+      "retellings": 2,
+      "categoryChanges": 0,
+      "corrected": 0,
+      "maxDepth": 2
+    }
+  ],
+  "actualMeetings": [
+    {
+      "round": 2,
+      "sender": "lin",
+      "receiver": "mia",
+      "distancePixels": 16
+    },
+    {
+      "round": 3,
+      "sender": "mia",
+      "receiver": "lin",
+      "distancePixels": 16
+    }
+  ],
+  "replayVerified": true,
+  "limitations": [
+    "One seed and three segments; no control condition or statistical comparison.",
+    "Only Lin and Mia received model decisions; 23 other residents remain pending.",
+    "Reach includes two initial information holders; just one new resident was reached.",
+    "The two transmissions form a return chain between the same pair; depth is not population breadth.",
+    "No correction, schedule revision or reflection was observed in this run.",
+    "Model identity and token usage rely on gateway metadata."
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="440" viewBox="0 0 1440 440" role="img" aria-labelledby="title desc">
+  <title id="title">Whisperville — Follow the life of a message</title>
+  <desc id="desc">A communication research sandbox with visible message provenance, reproducible rule baselines, and audited model pilots.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#b0c1a3" opacity=".14"/></pattern>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#b5c59b" stroke-width="1.2"/></marker>
+  </defs>
+  <rect width="1440" height="440" fill="#233e33" rx="8"/>
+  <rect width="1440" height="440" fill="url(#dots)"/>
+  <path d="M0 386H1440" stroke="#5f7963" opacity=".5"/>
+  <g font-family="Arial, sans-serif">
+    <text x="58" y="65" font-size="12" letter-spacing="4" fill="#b8c4a1">A SMALL TOWN. A VISIBLE CASCADE.</text>
+    <text x="54" y="158" font-family="Georgia, serif" font-size="77" letter-spacing="-3" fill="#f3f0d9">Whisperville</text>
+    <text x="59" y="207" font-size="24" fill="#dae2c7">Follow the life of a message.</text>
+    <text x="59" y="254" font-size="15" fill="#aebfa4">Who heard it? What changed? Where did it come from?</text>
+    <g font-size="11" letter-spacing="1" fill="#d5ddc0">
+      <rect x="58" y="291" width="155" height="31" rx="3" fill="#344f40" stroke="#56725a"/><text x="73" y="311">MESSAGE PROVENANCE</text>
+      <rect x="223" y="291" width="144" height="31" rx="3" fill="#344f40" stroke="#56725a"/><text x="239" y="311">PAIRED EXPERIMENTS</text>
+      <rect x="377" y="291" width="137" height="31" rx="3" fill="#344f40" stroke="#56725a"/><text x="394" y="311">AUDITED API PILOT</text>
+    </g>
+    <g transform="translate(790 72)">
+      <text x="0" y="0" font-size="10" letter-spacing="2" fill="#9fb494">PROVENANCE / AN ILLUSTRATION</text>
+      <path d="M161 86C193 86 193 41 225 41M161 86C193 86 193 166 225 166M386 166H421" stroke="#b5c59b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <g><rect y="53" width="161" height="67" rx="4" fill="#eff0dd"/><rect y="53" width="4" height="67" fill="#bca96c"/><text x="16" y="79" font-size="14" fill="#6f653e">A whisper begins</text><text x="16" y="101" font-size="10" fill="#999175">source / m0</text></g>
+      <g transform="translate(225 8)"><rect width="161" height="67" rx="4" fill="#eff0dd"/><rect width="4" height="67" fill="#bca96c"/><text x="16" y="26" font-size="14" fill="#6f653e">A neighbor retells</text><text x="16" y="49" font-size="10" fill="#999175">m1 &#8592; m0</text></g>
+      <g transform="translate(225 133)"><rect width="161" height="67" rx="4" fill="#eff0dd"/><rect width="4" height="67" fill="#b77952"/><text x="16" y="26" font-size="14" fill="#966640">The claim changes</text><text x="16" y="49" font-size="10" fill="#999175">m2 &#8592; m0</text></g>
+      <g transform="translate(421 133)"><rect width="161" height="67" rx="4" fill="#eff0dd"/><rect width="4" height="67" fill="#7f9b70"/><text x="16" y="26" font-size="14" fill="#5b7750">Check the source</text><text x="16" y="49" font-size="10" fill="#999175">a belief can change</text></g>
+      <text x="0" y="278" font-size="11" fill="#9fb494">Traceable events, not an inferred social network.</text>
+    </g>
+    <text x="59" y="417" font-size="11" letter-spacing="2" fill="#a7b99c">PIXEL WORLD / 25 RESIDENTS / ZH + EN</text>
+    <text x="1380" y="417" text-anchor="end" font-size="11" fill="#a7b99c">Research prototype &#183; MIT</text>
+  </g>
+</svg>

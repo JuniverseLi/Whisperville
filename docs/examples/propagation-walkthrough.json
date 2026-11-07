@@ -1,0 +1,1723 @@
+{
+  "version": 1,
+  "scenarioId": "school-closure",
+  "storyProgress": {
+    "arrivals": []
+  },
+  "id": "walkthrough-seed42-v1",
+  "seed": 42,
+  "round": 8,
+  "remaining": 3,
+  "residents": {
+    "lin": {
+      "claim": 1,
+      "confidence": 52,
+      "messageId": "m0",
+      "verified": false
+    },
+    "mei": {
+      "claim": 0,
+      "confidence": 100,
+      "messageId": "m5",
+      "verified": true
+    },
+    "zhou": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "qiao": {
+      "claim": 0,
+      "confidence": 100,
+      "messageId": "m1",
+      "verified": true
+    },
+    "tang": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "chen": {
+      "claim": 0,
+      "confidence": 100,
+      "messageId": "m6",
+      "verified": true
+    },
+    "xu": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "bo": {
+      "claim": 1,
+      "confidence": 61,
+      "messageId": "m7",
+      "verified": false
+    },
+    "leah": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "oli": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "ava": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "noah": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "mia": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "elliot": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "ivy": {
+      "claim": 0,
+      "confidence": 100,
+      "messageId": "m9",
+      "verified": true
+    },
+    "kai": {
+      "claim": 3,
+      "confidence": 87,
+      "messageId": "m4",
+      "verified": false
+    },
+    "emma": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "theo": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "luna": {
+      "claim": 1,
+      "confidence": 61,
+      "messageId": "m8",
+      "verified": false
+    },
+    "felix": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "sara": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "finn": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "ada": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "hugo": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    },
+    "nora": {
+      "claim": null,
+      "confidence": 0,
+      "messageId": null,
+      "verified": false
+    }
+  },
+  "village": {
+    "lin": {
+      "place": "cafe",
+      "position": [
+        260,
+        350
+      ]
+    },
+    "mei": {
+      "place": "home",
+      "position": [
+        400,
+        475
+      ]
+    },
+    "zhou": {
+      "place": "florist",
+      "position": [
+        260,
+        220
+      ]
+    },
+    "qiao": {
+      "place": "school",
+      "position": [
+        660,
+        204
+      ]
+    },
+    "tang": {
+      "place": "post",
+      "position": [
+        490,
+        255
+      ]
+    },
+    "chen": {
+      "place": "workshop",
+      "position": [
+        365,
+        140
+      ]
+    },
+    "xu": {
+      "place": "library",
+      "position": [
+        755,
+        360
+      ]
+    },
+    "bo": {
+      "place": "press",
+      "position": [
+        640,
+        480
+      ]
+    },
+    "leah": {
+      "place": "florist",
+      "position": [
+        260,
+        220
+      ]
+    },
+    "oli": {
+      "place": "florist",
+      "position": [
+        260,
+        220
+      ]
+    },
+    "ava": {
+      "place": "home",
+      "position": [
+        400,
+        475
+      ]
+    },
+    "noah": {
+      "place": "cafe",
+      "position": [
+        260,
+        350
+      ]
+    },
+    "mia": {
+      "place": "cafe",
+      "position": [
+        260,
+        350
+      ]
+    },
+    "elliot": {
+      "place": "library",
+      "position": [
+        755,
+        360
+      ]
+    },
+    "ivy": {
+      "place": "school",
+      "position": [
+        685,
+        200
+      ]
+    },
+    "kai": {
+      "place": "school",
+      "position": [
+        685,
+        200
+      ]
+    },
+    "emma": {
+      "place": "school",
+      "position": [
+        685,
+        200
+      ]
+    },
+    "theo": {
+      "place": "workshop",
+      "position": [
+        365,
+        140
+      ]
+    },
+    "luna": {
+      "place": "press",
+      "position": [
+        640,
+        480
+      ]
+    },
+    "felix": {
+      "place": "post",
+      "position": [
+        490,
+        255
+      ]
+    },
+    "sara": {
+      "place": "home",
+      "position": [
+        400,
+        475
+      ]
+    },
+    "finn": {
+      "place": "florist",
+      "position": [
+        260,
+        220
+      ]
+    },
+    "ada": {
+      "place": "library",
+      "position": [
+        755,
+        360
+      ]
+    },
+    "hugo": {
+      "place": "cafe",
+      "position": [
+        260,
+        350
+      ]
+    },
+    "nora": {
+      "place": "home",
+      "position": [
+        400,
+        475
+      ]
+    }
+  },
+  "encounters": [],
+  "messages": [
+    {
+      "id": "m0",
+      "parentId": null,
+      "sender": "source",
+      "receiver": "lin",
+      "round": 0,
+      "claim": 1,
+      "confidence": 52,
+      "evidence": false,
+      "kind": "rumor",
+      "textEn": "School might be closed tomorrow… Have you heard anything?",
+      "text": "听说学校明天可能停课……你听到什么消息了吗？",
+      "mode": "demo"
+    },
+    {
+      "id": "m1",
+      "parentId": null,
+      "sender": "notice",
+      "receiver": "qiao",
+      "round": 0,
+      "claim": 0,
+      "confidence": 100,
+      "evidence": true,
+      "kind": "notice",
+      "textEn": "[School Office notice] School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual.",
+      "text": "【耳语小学 · 校务处公告】学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+      "mode": "demo"
+    },
+    {
+      "id": "m2",
+      "sender": "lin",
+      "receiver": "mei",
+      "parentId": "m0",
+      "sourceClaim": 1,
+      "textEn": "School is closed tomorrow.",
+      "evidence": false,
+      "claim": 2,
+      "confidence": 74,
+      "text": "这件事你听说了吗？学校明天确定停课。",
+      "round": 1,
+      "kind": "rumor",
+      "mode": "demo",
+      "meeting": {
+        "place": "home",
+        "sender": [
+          375,
+          479
+        ],
+        "receiver": [
+          400,
+          475
+        ]
+      }
+    },
+    {
+      "id": "m3",
+      "sender": "mei",
+      "receiver": "chen",
+      "parentId": "m2",
+      "sourceClaim": 2,
+      "textEn": "An accident at school means it will be closed for a week.",
+      "evidence": false,
+      "claim": 3,
+      "confidence": 87,
+      "text": "这件事你听说了吗？学校出了事故，要停课一周。",
+      "round": 2,
+      "kind": "rumor",
+      "mode": "demo",
+      "meeting": {
+        "place": "workshop",
+        "sender": [
+          340,
+          144
+        ],
+        "receiver": [
+          365,
+          140
+        ]
+      }
+    },
+    {
+      "id": "m4",
+      "sender": "chen",
+      "receiver": "kai",
+      "parentId": "m3",
+      "sourceClaim": 3,
+      "textEn": "An accident at school means it will be closed for a week.",
+      "evidence": false,
+      "claim": 3,
+      "confidence": 87,
+      "text": "刚才有人跟我聊起，学校出了事故，要停课一周。",
+      "round": 3,
+      "kind": "rumor",
+      "mode": "demo",
+      "meeting": {
+        "place": "school",
+        "sender": [
+          660,
+          204
+        ],
+        "receiver": [
+          685,
+          200
+        ]
+      }
+    },
+    {
+      "id": "m5",
+      "sender": "qiao",
+      "receiver": "mei",
+      "parentId": "m1",
+      "sourceClaim": 0,
+      "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual.",
+      "evidence": true,
+      "claim": 0,
+      "confidence": 100,
+      "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+      "round": 4,
+      "kind": "correction",
+      "mode": "demo",
+      "meeting": {
+        "place": "cafe",
+        "sender": [
+          235,
+          354
+        ],
+        "receiver": [
+          260,
+          350
+        ]
+      }
+    },
+    {
+      "id": "m6",
+      "sender": "mei",
+      "receiver": "chen",
+      "parentId": "m5",
+      "sourceClaim": 0,
+      "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual.",
+      "evidence": true,
+      "claim": 0,
+      "confidence": 100,
+      "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+      "round": 5,
+      "kind": "correction",
+      "mode": "demo",
+      "meeting": {
+        "place": "cafe",
+        "sender": [
+          235,
+          354
+        ],
+        "receiver": [
+          260,
+          350
+        ]
+      }
+    },
+    {
+      "id": "m7",
+      "sender": "lin",
+      "receiver": "bo",
+      "parentId": "m0",
+      "sourceClaim": 1,
+      "textEn": "School might be closed tomorrow.",
+      "evidence": false,
+      "claim": 1,
+      "confidence": 61,
+      "text": "在路上遇到你正好，听说明天学校可能停课。",
+      "round": 6,
+      "kind": "rumor",
+      "mode": "demo",
+      "meeting": {
+        "place": "cafe",
+        "sender": [
+          235,
+          354
+        ],
+        "receiver": [
+          260,
+          350
+        ]
+      }
+    },
+    {
+      "id": "m8",
+      "sender": "bo",
+      "receiver": "luna",
+      "parentId": "m7",
+      "sourceClaim": 1,
+      "textEn": "School might be closed tomorrow.",
+      "evidence": false,
+      "claim": 1,
+      "confidence": 61,
+      "text": "我刚听到一个消息：听说明天学校可能停课。",
+      "round": 7,
+      "kind": "rumor",
+      "mode": "demo",
+      "meeting": {
+        "place": "square",
+        "sender": [
+          395,
+          314
+        ],
+        "receiver": [
+          420,
+          310
+        ]
+      }
+    },
+    {
+      "id": "m9",
+      "sender": "qiao",
+      "receiver": "ivy",
+      "parentId": "m1",
+      "sourceClaim": 0,
+      "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual.",
+      "evidence": true,
+      "claim": 0,
+      "confidence": 100,
+      "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+      "round": 8,
+      "kind": "correction",
+      "mode": "demo",
+      "meeting": {
+        "place": "school",
+        "sender": [
+          660,
+          204
+        ],
+        "receiver": [
+          685,
+          200
+        ]
+      }
+    }
+  ],
+  "history": [
+    {
+      "round": 0,
+      "corrected": 1,
+      "rumor": 1,
+      "unaware": 23,
+      "distorted": 0
+    },
+    {
+      "round": 1,
+      "corrected": 1,
+      "rumor": 2,
+      "unaware": 22,
+      "distorted": 1
+    },
+    {
+      "round": 2,
+      "corrected": 1,
+      "rumor": 3,
+      "unaware": 21,
+      "distorted": 2
+    },
+    {
+      "round": 3,
+      "corrected": 1,
+      "rumor": 4,
+      "unaware": 20,
+      "distorted": 3
+    },
+    {
+      "round": 4,
+      "corrected": 2,
+      "rumor": 3,
+      "unaware": 20,
+      "distorted": 2
+    },
+    {
+      "round": 5,
+      "corrected": 3,
+      "rumor": 2,
+      "unaware": 20,
+      "distorted": 1
+    },
+    {
+      "round": 6,
+      "corrected": 3,
+      "rumor": 3,
+      "unaware": 19,
+      "distorted": 1
+    },
+    {
+      "round": 7,
+      "corrected": 3,
+      "rumor": 4,
+      "unaware": 18,
+      "distorted": 1
+    },
+    {
+      "round": 8,
+      "corrected": 4,
+      "rumor": 4,
+      "unaware": 17,
+      "distorted": 1
+    }
+  ],
+  "lastAction": "turn",
+  "playMode": "explore",
+  "observer": true,
+  "lifeMode": "demo",
+  "recordingMode": "scripted-rule-walkthrough",
+  "minds": {
+    "lin": {
+      "memories": [
+        {
+          "id": "msg-m0",
+          "kind": "message",
+          "round": 0,
+          "importance": 6,
+          "messageId": "m0",
+          "text": "听说学校明天可能停课……你听到什么消息了吗？",
+          "textEn": "School might be closed tomorrow… Have you heard anything?"
+        },
+        {
+          "id": "msg-m2-lin",
+          "kind": "message",
+          "round": 1,
+          "importance": 6,
+          "messageId": "m2",
+          "text": "这件事你听说了吗？学校明天确定停课。",
+          "textEn": "School is closed tomorrow."
+        },
+        {
+          "id": "msg-m7-lin",
+          "kind": "message",
+          "round": 6,
+          "importance": 6,
+          "messageId": "m7",
+          "text": "在路上遇到你正好，听说明天学校可能停课。",
+          "textEn": "School might be closed tomorrow."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "cafe",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "cafe",
+          "kind": "work"
+        }
+      ]
+    },
+    "mei": {
+      "memories": [
+        {
+          "id": "msg-m2-mei",
+          "kind": "message",
+          "round": 1,
+          "importance": 6,
+          "messageId": "m2",
+          "text": "这件事你听说了吗？学校明天确定停课。",
+          "textEn": "School is closed tomorrow."
+        },
+        {
+          "id": "msg-m3-mei",
+          "kind": "message",
+          "round": 2,
+          "importance": 6,
+          "messageId": "m3",
+          "text": "这件事你听说了吗？学校出了事故，要停课一周。",
+          "textEn": "An accident at school means it will be closed for a week."
+        },
+        {
+          "id": "msg-m5-mei",
+          "kind": "message",
+          "round": 4,
+          "importance": 10,
+          "messageId": "m5",
+          "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+          "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual."
+        },
+        {
+          "id": "msg-m6-mei",
+          "kind": "message",
+          "round": 5,
+          "importance": 10,
+          "messageId": "m6",
+          "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+          "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "home",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "home",
+          "kind": "work"
+        }
+      ]
+    },
+    "zhou": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "florist",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "florist",
+          "kind": "work"
+        }
+      ]
+    },
+    "qiao": {
+      "memories": [
+        {
+          "id": "msg-m1",
+          "kind": "message",
+          "round": 0,
+          "importance": 10,
+          "messageId": "m1",
+          "text": "【耳语小学 · 校务处公告】学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+          "textEn": "[School Office notice] School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual."
+        },
+        {
+          "id": "msg-m5-qiao",
+          "kind": "message",
+          "round": 4,
+          "importance": 10,
+          "messageId": "m5",
+          "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+          "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual."
+        },
+        {
+          "id": "msg-m9-qiao",
+          "kind": "message",
+          "round": 8,
+          "importance": 10,
+          "messageId": "m9",
+          "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+          "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "school",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "school",
+          "kind": "work"
+        }
+      ]
+    },
+    "tang": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "post",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "post",
+          "kind": "work"
+        }
+      ]
+    },
+    "chen": {
+      "memories": [
+        {
+          "id": "msg-m3-chen",
+          "kind": "message",
+          "round": 2,
+          "importance": 6,
+          "messageId": "m3",
+          "text": "这件事你听说了吗？学校出了事故，要停课一周。",
+          "textEn": "An accident at school means it will be closed for a week."
+        },
+        {
+          "id": "msg-m4-chen",
+          "kind": "message",
+          "round": 3,
+          "importance": 6,
+          "messageId": "m4",
+          "text": "刚才有人跟我聊起，学校出了事故，要停课一周。",
+          "textEn": "An accident at school means it will be closed for a week."
+        },
+        {
+          "id": "msg-m6-chen",
+          "kind": "message",
+          "round": 5,
+          "importance": 10,
+          "messageId": "m6",
+          "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+          "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "workshop",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "workshop",
+          "kind": "work"
+        }
+      ]
+    },
+    "xu": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "library",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "library",
+          "kind": "work"
+        }
+      ]
+    },
+    "bo": {
+      "memories": [
+        {
+          "id": "msg-m7-bo",
+          "kind": "message",
+          "round": 6,
+          "importance": 6,
+          "messageId": "m7",
+          "text": "在路上遇到你正好，听说明天学校可能停课。",
+          "textEn": "School might be closed tomorrow."
+        },
+        {
+          "id": "msg-m8-bo",
+          "kind": "message",
+          "round": 7,
+          "importance": 6,
+          "messageId": "m8",
+          "text": "我刚听到一个消息：听说明天学校可能停课。",
+          "textEn": "School might be closed tomorrow."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "press",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "press",
+          "kind": "work"
+        }
+      ]
+    },
+    "leah": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "florist",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "florist",
+          "kind": "work"
+        }
+      ]
+    },
+    "oli": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "florist",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "florist",
+          "kind": "work"
+        }
+      ]
+    },
+    "ava": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "home",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "home",
+          "kind": "work"
+        }
+      ]
+    },
+    "noah": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "cafe",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "cafe",
+          "kind": "work"
+        }
+      ]
+    },
+    "mia": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "cafe",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "cafe",
+          "kind": "work"
+        }
+      ]
+    },
+    "elliot": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "library",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "library",
+          "kind": "work"
+        }
+      ]
+    },
+    "ivy": {
+      "memories": [
+        {
+          "id": "msg-m9-ivy",
+          "kind": "message",
+          "round": 8,
+          "importance": 10,
+          "messageId": "m9",
+          "text": "我有直接的消息来源：学校明天正常上课。操场因维护暂时关闭，教学楼照常开放。",
+          "textEn": "I have a first-hand source: School is open tomorrow. Only the playground is closed for maintenance; classes continue as usual."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "school",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "school",
+          "kind": "work"
+        }
+      ]
+    },
+    "kai": {
+      "memories": [
+        {
+          "id": "msg-m4-kai",
+          "kind": "message",
+          "round": 3,
+          "importance": 6,
+          "messageId": "m4",
+          "text": "刚才有人跟我聊起，学校出了事故，要停课一周。",
+          "textEn": "An accident at school means it will be closed for a week."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "school",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "school",
+          "kind": "work"
+        }
+      ]
+    },
+    "emma": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "school",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "school",
+          "kind": "work"
+        }
+      ]
+    },
+    "theo": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "workshop",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "workshop",
+          "kind": "work"
+        }
+      ]
+    },
+    "luna": {
+      "memories": [
+        {
+          "id": "msg-m8-luna",
+          "kind": "message",
+          "round": 7,
+          "importance": 6,
+          "messageId": "m8",
+          "text": "我刚听到一个消息：听说明天学校可能停课。",
+          "textEn": "School might be closed tomorrow."
+        }
+      ],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "press",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "press",
+          "kind": "work"
+        }
+      ]
+    },
+    "felix": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "post",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "post",
+          "kind": "work"
+        }
+      ]
+    },
+    "sara": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "home",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "home",
+          "kind": "work"
+        }
+      ]
+    },
+    "finn": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "florist",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "florist",
+          "kind": "work"
+        }
+      ]
+    },
+    "ada": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "library",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "library",
+          "kind": "work"
+        }
+      ]
+    },
+    "hugo": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "cafe",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "cafe",
+          "kind": "work"
+        }
+      ]
+    },
+    "nora": {
+      "memories": [],
+      "reflections": [],
+      "schedule": [
+        {
+          "time": "09:00",
+          "place": "home",
+          "kind": "work"
+        },
+        {
+          "time": "10:00",
+          "place": "square",
+          "kind": "social"
+        },
+        {
+          "time": "12:00",
+          "place": "cafe",
+          "kind": "meal"
+        },
+        {
+          "time": "14:00",
+          "place": "home",
+          "kind": "work"
+        }
+      ]
+    }
+  },
+  "intentions": [
+    {
+      "id": "lin",
+      "place": "square",
+      "kind": "work",
+      "activity": "照顾咖啡馆的生意",
+      "activityEn": "Keep the café welcoming and stay in touch with neighbors",
+      "reason": "照顾咖啡馆的生意，也留意邻里的消息",
+      "reasonEn": "Keep the café welcoming and stay in touch with neighbors.",
+      "talkTo": null
+    },
+    {
+      "id": "mei",
+      "place": "square",
+      "kind": "social",
+      "activity": "散步，找邻居聊聊近况",
+      "activityEn": "Take a walk and catch up with neighbors",
+      "reason": "安排孩子明天的上学和家里的生活",
+      "reasonEn": "Plan tomorrow’s school routine and look after the household.",
+      "talkTo": "qiao"
+    },
+    {
+      "id": "zhou",
+      "place": "square",
+      "kind": "work",
+      "activity": "照顾花草",
+      "activityEn": "Tend the flowers and prepare spring bouquets for neighbors",
+      "reason": "照顾花草，为邻居准备春日花束",
+      "reasonEn": "Tend the flowers and prepare spring bouquets for neighbors.",
+      "talkTo": null
+    },
+    {
+      "id": "qiao",
+      "place": "square",
+      "kind": "work",
+      "activity": "备课",
+      "activityEn": "Prepare lessons and answer parents’ questions about school",
+      "reason": "备课，并向有疑问的家长解释学校安排",
+      "reasonEn": "Prepare lessons and answer parents’ questions about school.",
+      "talkTo": null
+    },
+    {
+      "id": "tang",
+      "place": "cafe",
+      "kind": "break",
+      "activity": "去咖啡馆歇一会儿",
+      "activityEn": "Take a break at the café",
+      "reason": "散步，看看老朋友有什么需要帮忙的",
+      "reasonEn": "Take a walk and see whether old friends need a hand.",
+      "talkTo": null
+    },
+    {
+      "id": "chen",
+      "place": "square",
+      "kind": "social",
+      "activity": "散步，找邻居聊聊近况",
+      "activityEn": "Take a walk and catch up with neighbors",
+      "reason": "修理自行车，工作之余找朋友聊天",
+      "reasonEn": "Repair bicycles and catch up with friends during breaks.",
+      "talkTo": "theo"
+    },
+    {
+      "id": "xu",
+      "place": "square",
+      "kind": "work",
+      "activity": "整理书籍",
+      "activityEn": "Organize books and help neighbors check information",
+      "reason": "整理书籍，帮助邻居核对消息来源",
+      "reasonEn": "Organize books and help neighbors check information.",
+      "talkTo": null
+    },
+    {
+      "id": "bo",
+      "place": "square",
+      "kind": "work",
+      "activity": "收集社区新闻",
+      "activityEn": "Interview neighbors and verify the day’s community stories",
+      "reason": "收集社区新闻，采访不同的人并核对说法",
+      "reasonEn": "Interview neighbors and verify the day’s community stories.",
+      "talkTo": null
+    },
+    {
+      "id": "leah",
+      "place": "square",
+      "kind": "work",
+      "activity": "学习花艺",
+      "activityEn": "Learn floral design and help prepare the shop’s orders",
+      "reason": "学习花艺，帮花店准备订单",
+      "reasonEn": "Learn floral design and help prepare the shop’s orders.",
+      "talkTo": null
+    },
+    {
+      "id": "oli",
+      "place": "square",
+      "kind": "social",
+      "activity": "散步，找邻居聊聊近况",
+      "activityEn": "Take a walk and catch up with neighbors",
+      "reason": "照顾街边花园，了解邻居需要",
+      "reasonEn": "Tend public gardens and check what neighbors need.",
+      "talkTo": "zhou"
+    },
+    {
+      "id": "ava",
+      "place": "square",
+      "kind": "work",
+      "activity": "寻找春日灵感",
+      "activityEn": "Find spring inspiration and illustrate a community poster",
+      "reason": "寻找春日灵感，为社区画海报",
+      "reasonEn": "Find spring inspiration and illustrate a community poster.",
+      "talkTo": null
+    },
+    {
+      "id": "noah",
+      "place": "square",
+      "kind": "work",
+      "activity": "准备点心",
+      "activityEn": "Bake pastries and learn what regular customers enjoy",
+      "reason": "准备点心，询问客人的口味",
+      "reasonEn": "Bake pastries and learn what regular customers enjoy.",
+      "talkTo": null
+    },
+    {
+      "id": "mia",
+      "place": "square",
+      "kind": "work",
+      "activity": "学习冲咖啡",
+      "activityEn": "Practice making coffee and welcome new customers",
+      "reason": "学习冲咖啡，接待新来的客人",
+      "reasonEn": "Practice making coffee and welcome new customers.",
+      "talkTo": null
+    },
+    {
+      "id": "elliot",
+      "place": "square",
+      "kind": "social",
+      "activity": "散步，找邻居聊聊近况",
+      "activityEn": "Take a walk and catch up with neighbors",
+      "reason": "查阅资料，写完今天的章节",
+      "reasonEn": "Research local history and finish today’s chapter.",
+      "talkTo": "ivy"
+    },
+    {
+      "id": "ivy",
+      "place": "cafe",
+      "kind": "break",
+      "activity": "去咖啡馆歇一会儿",
+      "activityEn": "Take a break at the café",
+      "reason": "准备作业，确认明天的课程",
+      "reasonEn": "Finish homework and confirm tomorrow’s lessons.",
+      "talkTo": null
+    },
+    {
+      "id": "kai",
+      "place": "square",
+      "kind": "work",
+      "activity": "完成小组作业",
+      "activityEn": "Finish a group project and meet classmates",
+      "reason": "完成小组作业，约同学一起活动",
+      "reasonEn": "Finish a group project and meet classmates.",
+      "talkTo": null
+    },
+    {
+      "id": "emma",
+      "place": "square",
+      "kind": "work",
+      "activity": "准备音乐课",
+      "activityEn": "Prepare music lessons and discuss rehearsal plans",
+      "reason": "准备音乐课，和同事商量排练",
+      "reasonEn": "Prepare music lessons and discuss rehearsal plans.",
+      "talkTo": null
+    },
+    {
+      "id": "theo",
+      "place": "square",
+      "kind": "social",
+      "activity": "散步，找邻居聊聊近况",
+      "activityEn": "Take a walk and catch up with neighbors",
+      "reason": "整理工具，学习修理自行车",
+      "reasonEn": "Sort tools and practice repairing bicycles.",
+      "talkTo": "chen"
+    },
+    {
+      "id": "luna",
+      "place": "square",
+      "kind": "work",
+      "activity": "拍摄小镇春景",
+      "activityEn": "Photograph the spring town and visit interview subjects",
+      "reason": "拍摄小镇春景，拜访受访居民",
+      "reasonEn": "Photograph the spring town and visit interview subjects.",
+      "talkTo": null
+    },
+    {
+      "id": "felix",
+      "place": "cafe",
+      "kind": "break",
+      "activity": "去咖啡馆歇一会儿",
+      "activityEn": "Take a break at the café",
+      "reason": "整理包裹，确认居民的收件时间",
+      "reasonEn": "Sort parcels and confirm delivery times with residents.",
+      "talkTo": null
+    },
+    {
+      "id": "sara",
+      "place": "square",
+      "kind": "work",
+      "activity": "拜访居民",
+      "activityEn": "Visit residents and understand household needs",
+      "reason": "拜访居民，了解家庭的需要",
+      "reasonEn": "Visit residents and understand household needs.",
+      "talkTo": null
+    },
+    {
+      "id": "finn",
+      "place": "square",
+      "kind": "social",
+      "activity": "散步，找邻居聊聊近况",
+      "activityEn": "Take a walk and catch up with neighbors",
+      "reason": "巡看河畔步道，记录植物状况",
+      "reasonEn": "Inspect the riverside path and note plant conditions.",
+      "talkTo": "zhou"
+    },
+    {
+      "id": "ada",
+      "place": "square",
+      "kind": "work",
+      "activity": "完成一段程序",
+      "activityEn": "Finish a programming task and exchange ideas with friends",
+      "reason": "完成一段程序，和朋友交流想法",
+      "reasonEn": "Finish a programming task and exchange ideas with friends.",
+      "talkTo": null
+    },
+    {
+      "id": "hugo",
+      "place": "square",
+      "kind": "work",
+      "activity": "准备午餐菜单",
+      "activityEn": "Plan lunch and collect ingredients",
+      "reason": "准备午餐菜单，购买需要的食材",
+      "reasonEn": "Plan lunch and collect ingredients.",
+      "talkTo": null
+    },
+    {
+      "id": "nora",
+      "place": "cafe",
+      "kind": "break",
+      "activity": "去咖啡馆歇一会儿",
+      "activityEn": "Take a break at the café",
+      "reason": "整理健康资料，关心邻居近况",
+      "reasonEn": "Organize health information and check in with neighbors.",
+      "talkTo": null
+    }
+  ]
+}

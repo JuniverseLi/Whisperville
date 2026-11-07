@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "rule-diffusion-v1",
+  "mode": "rules-only-abstract-network",
+  "population": 25,
+  "scenarioId": "school-closure",
+  "config": {
+    "seedStart": 1000,
+    "seeds": 30,
+    "rounds": 12,
+    "interventionRound": 2
+  },
+  "modelCalls": 0,
+  "initialConditions": {
+    "reliableSource": "qiao",
+    "rumorHolder": "lin"
+  },
+  "protocol": {
+    "topology": "directed-social-links",
+    "movement": "abstract",
+    "maxContactsPerSegment": 3,
+    "verifiedSourceProtection": "engine-enforced",
+    "policyCandidates": "currently-unverified",
+    "interventionTiming": "after segment r, before segment r+1"
+  },
+  "interval": {
+    "method": "percentile-bootstrap",
+    "quantile": "nearest-rank",
+    "resamples": 1000,
+    "level": 0.95,
+    "unit": "paired simulation seed"
+  },
+  "graph": [
+    {
+      "id": "lin",
+      "links": [
+        "mei",
+        "zhou",
+        "bo",
+        "noah",
+        "mia",
+        "hugo"
+      ],
+      "caution": 0.3
+    },
+    {
+      "id": "mei",
+      "links": [
+        "lin",
+        "qiao",
+        "chen",
+        "ava",
+        "sara",
+        "nora",
+        "zhou"
+      ],
+      "caution": 0.35
+    },
+    {
+      "id": "zhou",
+      "links": [
+        "lin",
+        "tang",
+        "chen",
+        "leah",
+        "oli",
+        "finn",
+        "qiao"
+      ],
+      "caution": 0.6
+    },
+    {
+      "id": "qiao",
+      "links": [
+        "mei",
+        "xu",
+        "tang",
+        "ivy",
+        "kai",
+        "emma"
+      ],
+      "caution": 0.9
+    },
+    {
+      "id": "tang",
+      "links": [
+        "zhou",
+        "qiao",
+        "xu",
+        "felix",
+        "chen"
+      ],
+      "caution": 0.65
+    },
+    {
+      "id": "chen",
+      "links": [
+        "mei",
+        "zhou",
+        "bo",
+        "theo",
+        "xu"
+      ],
+      "caution": 0.2
+    },
+    {
+      "id": "xu",
+      "links": [
+        "qiao",
+        "tang",
+        "bo",
+        "elliot",
+        "ada"
+      ],
+      "caution": 0.95
+    },
+    {
+      "id": "bo",
+      "links": [
+        "lin",
+        "chen",
+        "xu",
+        "luna",
+        "leah"
+      ],
+      "caution": 0.5
+    },
+    {
+      "id": "leah",
+      "links": [
+        "zhou",
+        "oli",
+        "finn"
+      ],
+      "caution": 0.45
+    },
+    {
+      "id": "oli",
+      "links": [
+        "zhou",
+        "leah",
+        "finn",
+        "ava"
+      ],
+      "caution": 0.55
+    },
+    {
+      "id": "ava",
+      "links": [
+        "mei",
+        "sara",
+        "nora",
+        "noah"
+      ],
+      "caution": 0.65
+    },
+    {
+      "id": "noah",
+      "links": [
+        "lin",
+        "mia",
+        "hugo"
+      ],
+      "caution": 0.75
+    },
+    {
+      "id": "mia",
+      "links": [
+        "lin",
+        "noah",
+        "hugo",
+        "elliot"
+      ],
+      "caution": 0.8500000000000001
+    },
+    {
+      "id": "elliot",
+      "links": [
+        "xu",
+        "ada",
+        "ivy"
+      ],
+      "caution": 0.45
+    },
+    {
+      "id": "ivy",
+      "links": [
+        "qiao",
+        "kai",
+        "emma"
+      ],
+      "caution": 0.55
+    },
+    {
+      "id": "kai",
+      "links": [
+        "qiao",
+        "ivy",
+        "emma"
+      ],
+      "caution": 0.65
+    },
+    {
+      "id": "emma",
+      "links": [
+        "qiao",
+        "ivy",
+        "kai",
+        "theo"
+      ],
+      "caution": 0.75
+    },
+    {
+      "id": "theo",
+      "links": [
+        "chen",
+        "luna"
+      ],
+      "caution": 0.8500000000000001
+    },
+    {
+      "id": "luna",
+      "links": [
+        "bo",
+        "felix"
+      ],
+      "caution": 0.45
+    },
+    {
+      "id": "felix",
+      "links": [
+        "tang",
+        "sara"
+      ],
+      "caution": 0.55
+    },
+    {
+      "id": "sara",
+      "links": [
+        "mei",
+        "ava",
+        "nora",
+        "finn"
+      ],
+      "caution": 0.65
+    },
+    {
+      "id": "finn",
+      "links": [
+        "zhou",
+        "leah",
+        "oli",
+        "ada"
+      ],
+      "caution": 0.75
+    },
+    {
+      "id": "ada",
+      "links": [
+        "xu",
+        "elliot",
+        "hugo"
+      ],
+      "caution": 0.8500000000000001
+    },
+    {
+      "id": "hugo",
+      "links": [
+        "lin",
+        "noah",
+        "mia",
+        "nora"
+      ],
+      "caution": 0.45
+    },
+    {
+      "id": "nora",
+      "links": [
+        "mei",
+        "ava",
+        "sara",
+        "lin"
+      ],
+      "caution": 0.55
+    }
+  ],
+  "assumptions": [
+    "Verified sources cannot be overwritten by rumors: an engine rule, not learned behavior.",
+    "Contacts use the directed social graph; map travel and life intentions are excluded.",
+    "The baseline spends zero interventions; all three intervention policies spend exactly one.",
+    "Intervals describe variation across simulated seeds, not uncertainty about human populations.",
+    "No models are called or trained; this experiment does not measure LLM cooperation or reproduce s3."
+  ],
+  "summary": [
+    {
+      "policy": "none",
+      "metrics": {
+        "sourceCoverage": {
+          "mean": 0.5600000000000002,
+          "low": 0.5000000000000001,
+          "high": 0.6240000000000002,
+          "n": 30
+        },
+        "rumorCoverage": {
+          "mean": 0.3813333333333333,
+          "low": 0.324,
+          "high": 0.44266666666666665,
+          "n": 30
+        },
+        "sourceAuc": {
+          "mean": 0.32377777777777783,
+          "low": 0.29494444444444434,
+          "high": 0.3584444444444445,
+          "n": 30
+        },
+        "messages": {
+          "mean": 35,
+          "low": 35,
+          "high": 35,
+          "n": 30
+        },
+        "maxSourceDepth": {
+          "mean": 4.866666666666666,
+          "low": 4.466666666666667,
+          "high": 5.3,
+          "n": 30
+        }
+      },
+      "curve": [
+        {
+          "round": 0,
+          "sourceCoverage": 0.040000000000000015,
+          "rumorCoverage": 0.040000000000000015
+        },
+        {
+          "round": 1,
+          "sourceCoverage": 0.08000000000000003,
+          "rumorCoverage": 0.08000000000000003
+        },
+        {
+          "round": 2,
+          "sourceCoverage": 0.1333333333333334,
+          "rumorCoverage": 0.14666666666666675
+        },
+        {
+          "round": 3,
+          "sourceCoverage": 0.19333333333333344,
+          "rumorCoverage": 0.2026666666666668
+        },
+        {
+          "round": 4,
+          "sourceCoverage": 0.24400000000000013,
+          "rumorCoverage": 0.25866666666666677
+        },
+        {
+          "round": 5,
+          "sourceCoverage": 0.29200000000000004,
+          "rumorCoverage": 0.3093333333333333
+        },
+        {
+          "round": 6,
+          "sourceCoverage": 0.3386666666666668,
+          "rumorCoverage": 0.34800000000000003
+        },
+        {
+          "round": 7,
+          "sourceCoverage": 0.38400000000000006,
+          "rumorCoverage": 0.3773333333333334
+        },
+        {
+          "round": 8,
+          "sourceCoverage": 0.4266666666666667,
+          "rumorCoverage": 0.39199999999999996
+        },
+        {
+          "round": 9,
+          "sourceCoverage": 0.46400000000000013,
+          "rumorCoverage": 0.39733333333333326
+        },
+        {
+          "round": 10,
+          "sourceCoverage": 0.5000000000000001,
+          "rumorCoverage": 0.39733333333333337
+        },
+        {
+          "round": 11,
+          "sourceCoverage": 0.5293333333333333,
+          "rumorCoverage": 0.39066666666666666
+        },
+        {
+          "round": 12,
+          "sourceCoverage": 0.5600000000000002,
+          "rumorCoverage": 0.3813333333333333
+        }
+      ]
+    },
+    {
+      "policy": "random",
+      "metrics": {
+        "sourceCoverage": {
+          "mean": 0.6839999999999999,
+          "low": 0.6320000000000001,
+          "high": 0.7320000000000001,
+          "n": 30
+        },
+        "rumorCoverage": {
+          "mean": 0.2493333333333334,
+          "low": 0.19600000000000006,
+          "high": 0.3026666666666667,
+          "n": 30
+        },
+        "sourceAuc": {
+          "mean": 0.3927222222222222,
+          "low": 0.3678888888888889,
+          "high": 0.41761111111111116,
+          "n": 30
+        },
+        "messages": {
+          "mean": 35,
+          "low": 35,
+          "high": 35,
+          "n": 30
+        },
+        "maxSourceDepth": {
+          "mean": 5.166666666666667,
+          "low": 4.766666666666667,
+          "high": 5.533333333333333,
+          "n": 30
+        }
+      },
+      "curve": [
+        {
+          "round": 0,
+          "sourceCoverage": 0.040000000000000015,
+          "rumorCoverage": 0.040000000000000015
+        },
+        {
+          "round": 1,
+          "sourceCoverage": 0.08000000000000003,
+          "rumorCoverage": 0.08000000000000003
+        },
+        {
+          "round": 2,
+          "sourceCoverage": 0.1733333333333334,
+          "rumorCoverage": 0.13600000000000007
+        },
+        {
+          "round": 3,
+          "sourceCoverage": 0.23866666666666683,
+          "rumorCoverage": 0.1853333333333334
+        },
+        {
+          "round": 4,
+          "sourceCoverage": 0.3013333333333334,
+          "rumorCoverage": 0.22533333333333347
+        },
+        {
+          "round": 5,
+          "sourceCoverage": 0.35466666666666674,
+          "rumorCoverage": 0.2746666666666667
+        },
+        {
+          "round": 6,
+          "sourceCoverage": 0.4080000000000001,
+          "rumorCoverage": 0.2946666666666667
+        },
+        {
+          "round": 7,
+          "sourceCoverage": 0.4640000000000001,
+          "rumorCoverage": 0.30533333333333335
+        },
+        {
+          "round": 8,
+          "sourceCoverage": 0.5133333333333335,
+          "rumorCoverage": 0.30133333333333334
+        },
+        {
+          "round": 9,
+          "sourceCoverage": 0.5640000000000001,
+          "rumorCoverage": 0.28666666666666674
+        },
+        {
+          "round": 10,
+          "sourceCoverage": 0.6093333333333332,
+          "rumorCoverage": 0.2773333333333334
+        },
+        {
+          "round": 11,
+          "sourceCoverage": 0.6440000000000001,
+          "rumorCoverage": 0.2720000000000001
+        },
+        {
+          "round": 12,
+          "sourceCoverage": 0.6839999999999999,
+          "rumorCoverage": 0.2493333333333334
+        }
+      ]
+    },
+    {
+      "policy": "degree",
+      "metrics": {
+        "sourceCoverage": {
+          "mean": 0.7186666666666669,
+          "low": 0.6706666666666669,
+          "high": 0.7640000000000005,
+          "n": 30
+        },
+        "rumorCoverage": {
+          "mean": 0.22133333333333344,
+          "low": 0.18266666666666673,
+          "high": 0.2653333333333335,
+          "n": 30
+        },
+        "sourceAuc": {
+          "mean": 0.406388888888889,
+          "low": 0.3808888888888889,
+          "high": 0.4305,
+          "n": 30
+        },
+        "messages": {
+          "mean": 35,
+          "low": 35,
+          "high": 35,
+          "n": 30
+        },
+        "maxSourceDepth": {
+          "mean": 4.633333333333334,
+          "low": 4.3,
+          "high": 4.966666666666667,
+          "n": 30
+        }
+      },
+      "curve": [
+        {
+          "round": 0,
+          "sourceCoverage": 0.040000000000000015,
+          "rumorCoverage": 0.040000000000000015
+        },
+        {
+          "round": 1,
+          "sourceCoverage": 0.08000000000000003,
+          "rumorCoverage": 0.08000000000000003
+        },
+        {
+          "round": 2,
+          "sourceCoverage": 0.1733333333333334,
+          "rumorCoverage": 0.12800000000000003
+        },
+        {
+          "round": 3,
+          "sourceCoverage": 0.24400000000000016,
+          "rumorCoverage": 0.1720000000000001
+        },
+        {
+          "round": 4,
+          "sourceCoverage": 0.3053333333333334,
+          "rumorCoverage": 0.21333333333333343
+        },
+        {
+          "round": 5,
+          "sourceCoverage": 0.36533333333333334,
+          "rumorCoverage": 0.2493333333333334
+        },
+        {
+          "round": 6,
+          "sourceCoverage": 0.4186666666666668,
+          "rumorCoverage": 0.26933333333333337
+        },
+        {
+          "round": 7,
+          "sourceCoverage": 0.4786666666666669,
+          "rumorCoverage": 0.2706666666666668
+        },
+        {
+          "round": 8,
+          "sourceCoverage": 0.536,
+          "rumorCoverage": 0.27200000000000013
+        },
+        {
+          "round": 9,
+          "sourceCoverage": 0.5853333333333334,
+          "rumorCoverage": 0.2706666666666668
+        },
+        {
+          "round": 10,
+          "sourceCoverage": 0.6346666666666666,
+          "rumorCoverage": 0.25733333333333347
+        },
+        {
+          "round": 11,
+          "sourceCoverage": 0.676,
+          "rumorCoverage": 0.23733333333333342
+        },
+        {
+          "round": 12,
+          "sourceCoverage": 0.7186666666666669,
+          "rumorCoverage": 0.22133333333333344
+        }
+      ]
+    },
+    {
+      "policy": "bridge",
+      "metrics": {
+        "sourceCoverage": {
+          "mean": 0.7293333333333334,
+          "low": 0.6826666666666669,
+          "high": 0.7706666666666666,
+          "n": 30
+        },
+        "rumorCoverage": {
+          "mean": 0.2280000000000001,
+          "low": 0.19066666666666673,
+          "high": 0.2693333333333335,
+          "n": 30
+        },
+        "sourceAuc": {
+          "mean": 0.41361111111111115,
+          "low": 0.39138888888888884,
+          "high": 0.4347222222222223,
+          "n": 30
+        },
+        "messages": {
+          "mean": 35,
+          "low": 35,
+          "high": 35,
+          "n": 30
+        },
+        "maxSourceDepth": {
+          "mean": 4.666666666666667,
+          "low": 4.366666666666666,
+          "high": 5,
+          "n": 30
+        }
+      },
+      "curve": [
+        {
+          "round": 0,
+          "sourceCoverage": 0.040000000000000015,
+          "rumorCoverage": 0.040000000000000015
+        },
+        {
+          "round": 1,
+          "sourceCoverage": 0.08000000000000003,
+          "rumorCoverage": 0.08000000000000003
+        },
+        {
+          "round": 2,
+          "sourceCoverage": 0.1733333333333334,
+          "rumorCoverage": 0.13600000000000007
+        },
+        {
+          "round": 3,
+          "sourceCoverage": 0.23866666666666683,
+          "rumorCoverage": 0.18400000000000008
+        },
+        {
+          "round": 4,
+          "sourceCoverage": 0.30800000000000005,
+          "rumorCoverage": 0.2253333333333334
+        },
+        {
+          "round": 5,
+          "sourceCoverage": 0.37466666666666676,
+          "rumorCoverage": 0.2520000000000001
+        },
+        {
+          "round": 6,
+          "sourceCoverage": 0.4400000000000001,
+          "rumorCoverage": 0.2693333333333335
+        },
+        {
+          "round": 7,
+          "sourceCoverage": 0.5000000000000002,
+          "rumorCoverage": 0.27866666666666673
+        },
+        {
+          "round": 8,
+          "sourceCoverage": 0.5493333333333332,
+          "rumorCoverage": 0.2800000000000001
+        },
+        {
+          "round": 9,
+          "sourceCoverage": 0.5986666666666667,
+          "rumorCoverage": 0.276
+        },
+        {
+          "round": 10,
+          "sourceCoverage": 0.6373333333333332,
+          "rumorCoverage": 0.2706666666666667
+        },
+        {
+          "round": 11,
+          "sourceCoverage": 0.6786666666666669,
+          "rumorCoverage": 0.25466666666666676
+        },
+        {
+          "round": 12,
+          "sourceCoverage": 0.7293333333333334,
+          "rumorCoverage": 0.2280000000000001
+        }
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "policy": "degree",
+      "baseline": "random",
+      "metric": "sourceAuc",
+      "difference": {
+        "mean": 0.013666666666666672,
+        "low": -0.008222222222222221,
+        "high": 0.03922222222222224,
+        "n": 30
+      }
+    },
+    {
+      "policy": "bridge",
+      "baseline": "random",
+      "metric": "sourceAuc",
+      "difference": {
+        "mean": 0.020888888888888898,
+        "low": 0.0022777777777777774,
+        "high": 0.04066666666666667,
+        "n": 30
+      }
+    }
+  ]
+}

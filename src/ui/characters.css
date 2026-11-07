@@ -1,0 +1,191 @@
+/* The same generated originals are reused for portraits and full-body cast cards. */
+.character-art {
+  display: block;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+.portrait {
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--portrait-color) 18%, #f8f0df);
+}
+.portrait > img {
+  position: absolute;
+  display: block;
+  width: 210%;
+  max-width: none;
+  height: auto;
+  left: -55%;
+  top: 0;
+}
+.character-spotlight {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.character-edition,
+.character-backdrop-word {
+  position: absolute;
+}
+.character-backdrop-word {
+  font-family: var(--serif);
+  line-height: 1;
+}
+.character-spotlight > .character-art {
+  position: absolute;
+  filter: drop-shadow(1px 5px 5px #5f4e3320);
+}
+.resident-heading {
+  position: absolute;
+  z-index: 2;
+}
+.cast-dialog {
+  width: 1060px;
+  max-width: min(1060px, calc(100vw - 40px));
+  background: #f7f3e8;
+}
+.cast-dialog .dialog-inner {
+  padding: 32px;
+}
+.cast-dialog .dialog-heading {
+  margin-bottom: 8px;
+}
+.cast-introduction {
+  color: #8b907b;
+  font-size: 12px;
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+.cast-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.cast-card {
+  min-width: 0;
+  padding: 0;
+  border: 1px solid #dfdfcc;
+  border-radius: 9px;
+  background: #fffdf7;
+  overflow: hidden;
+  text-align: left;
+}
+.cast-card:hover {
+  border-color: #9aa783;
+  box-shadow: 0 5px 15px #4f553716;
+  transform: translateY(-3px);
+}
+.cast-card-art {
+  position: relative;
+  height: 218px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 50% 60%,
+      color-mix(in srgb, var(--character-accent) 25%, transparent),
+      transparent 70%
+    ),
+    #f1ecdc;
+  border-bottom: 1px solid #e5e1d1;
+}
+.cast-card-art > .character-art {
+  width: 100%;
+  height: 100%;
+  padding: 10px 7px 0;
+}
+.cast-card-number {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  color: #b5ab8b;
+  font: italic 28px var(--serif);
+}
+.cast-card-caption {
+  padding: 14px;
+}
+.cast-card-title {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  color: #a49e84;
+}
+.cast-card h3 {
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 9px;
+}
+.cast-card h3 > span {
+  font-family: 'DM Sans', 'Microsoft YaHei', sans-serif;
+  font-size: 10px;
+  color: #94977f;
+  margin-left: 10px;
+}
+.cast-card p {
+  font-size: 11px;
+  color: #8d947c;
+  line-height: 1.8;
+  min-height: 36px;
+  margin: 8px 0;
+}
+.cast-card .status-pill {
+  font-size: 10px;
+}
+@media (max-width: 1000px) {
+  .cast-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cast-card-art {
+    height: 270px;
+  }
+}
+@media (max-width: 680px) {
+  .cast-dialog {
+    max-width: calc(100vw - 24px);
+  }
+  .cast-dialog .dialog-inner {
+    padding: 20px 14px;
+  }
+  .cast-dialog .dialog-heading h2 {
+    font-size: 23px;
+  }
+  .cast-introduction {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+  .cast-gallery {
+    gap: 10px;
+  }
+  .cast-card-art {
+    height: 185px;
+  }
+  .cast-card-number {
+    top: 9px;
+    left: 9px;
+    font-size: 20px;
+  }
+  .cast-card-caption {
+    padding: 12px 10px;
+  }
+  .cast-card-title {
+    font-size: 6px;
+    letter-spacing: 0.7px;
+  }
+  .cast-card h3 {
+    font-size: 22px;
+  }
+  .cast-card h3 > span {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 10px;
+  }
+  .cast-card p {
+    font-size: 11px;
+    min-height: 58px;
+  }
+}

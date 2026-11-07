@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "artifacts": {
+    "rules-summary.json": "7d9a597f15087a422dd4167e8b85f01c04ca3eb664da674f5e561b6a4ca48bb2",
+    "rules-trials.json.gz": "357fffa070da8b8f1b0929f0c88c4b35d013a58a79bb1ea2165acd4bdea3f9c6",
+    "live-pilot-v2.json": "54b184e856c7021b75f530d55f0656fb3e377898fa5afc56af71d3e605bf555a",
+    "live-pilot-summary.json": "123686591ee86f5261fdd352185823fc74c5434293aa14bbc75f56466c7c9df9",
+    "live-pilot-v1-failed.json": "f43ac12f75455ecaac91e8dc5e519d140cb8d10609f19a506a549159803207e0",
+    "live-town-run-v1.json": "92211145b9bb46e6da5ac5dd7fbb1510fbfca474195cac82b31b938d829765cc",
+    "live-town-summary.json": "051531fc1ac77919af3b9c91ef5e53c4d145f5bf0785bffdd423f554ceb47171"
+  },
+  "notes": [
+    "Rule report uses a fixed abstract contact graph; no LLM calls.",
+    "Live pilot is one task seed with two conditions, not a statistical benchmark.",
+    "Public trace preserves exact task prompts and outputs; response IDs and job ID removed.",
+    "Hashes verify artifact integrity, not independent verification of the provider model."
+  ]
+}

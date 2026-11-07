@@ -1,0 +1,17 @@
+node_modules/
+.whisperville/
+dist/
+.env
+.env.*
+!.env.example
+work/
+output/
+*.log
+.DS_Store
+.codegraph/
+__pycache__/
+*.py[cod]
+.npmrc
+*.pem
+*.p12
+*.pfx

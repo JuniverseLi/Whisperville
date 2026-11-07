@@ -1,0 +1,50 @@
+{
+  "version": "private-number-pilot-v2",
+  "model": "gemini-3.8-flash",
+  "taskSeeds": 1,
+  "requestedCalls": 16,
+  "successfulCalls": 16,
+  "durationSeconds": 67.092,
+  "usage": {
+    "prompt": 7970,
+    "completion": 9510,
+    "total": 17480,
+    "unknown": 0
+  },
+  "score": [
+    {
+      "seed": 1000,
+      "condition": "communication",
+      "solved": true,
+      "correctAgents": [
+        "lin",
+        "mei",
+        "zhou",
+        "qiao"
+      ],
+      "firstSolvedRound": 1,
+      "deliveredMessages": 12,
+      "target": [
+        72,
+        81,
+        84,
+        89
+      ]
+    },
+    {
+      "seed": 1000,
+      "condition": "no-communication",
+      "solved": false,
+      "correctAgents": [],
+      "firstSolvedRound": null,
+      "deliveredMessages": 0,
+      "target": [
+        72,
+        81,
+        84,
+        89
+      ]
+    }
+  ],
+  "replayVerified": true
+}
